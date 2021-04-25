@@ -11,7 +11,9 @@ type Repo struct {
 
 // Add new Repo
 func New() *Repo {
-	return &Repo{}
+	return &Repo{
+		Items: []Item{},
+	}
 }
 
 // Add Item to repo

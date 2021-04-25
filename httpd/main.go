@@ -19,7 +19,7 @@ func main() {
 	r.GET("/newsfeed", handler.NewsfeedGet(feed))
 
 	// newsfeed POST route
-	r.POST("/newsfeed", handler.NewsfeedGet(feed))
+	r.POST("/newsfeed", handler.NewsfeedPost(feed))
 
 	// boot up router
 	r.Run()
